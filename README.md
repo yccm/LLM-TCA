@@ -4,20 +4,24 @@ PyTorch Implementation on Paper [NeurIPS 2025] [LLM-Driven Treatment Effect Esti
 
 ## Introduction
 
-Estimating treatment effects is crucial for personalized decision-making in medicine, but this task faces unique challenges in clinical practice. At training time, models for estimating treatment effects are typically trained on well-structured medical datasets that contain detailed patient information. However, at inference time, predictions are often made using textual descriptions (e.g., descriptions with self-reported symptoms), which are incomplete representations of the original patient information. In this work, we propose a novel framework for estimating treatment effects that explicitly accounts for inference time text confounding. Our framework leverages large language models (LLMs) together with a custom doubly robust learner to mitigate biases caused by the inference time text confounding. 
 
+
+
+Estimating treatment effects is crucial for personalized decision-making in medicine, but this task faces unique challenges in clinical practice. At training time, models for estimating treatment effects are typically trained on well-structured medical datasets that contain detailed patient information. However, at inference time, predictions are often made using textual descriptions (e.g., descriptions with self-reported symptoms), which are incomplete representations of the original patient information. 
+
+In this work, we propose a novel framework for estimating treatment effects that explicitly accounts for inference time text confounding. Our framework leverages large language models (LLMs) together with a custom doubly robust learner to mitigate biases caused by the inference time text confounding. 
+
+
+
+<p align="center">
+  <img src="fig/causal_graph.png" alt="Causal Graph" width="400"/>
+</p>
 
 
 ### Installation:
 `python 3.10.16
 pytorch 2.5.1`
 
-
-### Getting started:
-
-#### Prerequisites:
-
-#### Training Example
 
 
 
